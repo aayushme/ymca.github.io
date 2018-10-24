@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YMCA</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+  .bg-1 { 
+      background-color: #1abc9c; 
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; 
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #fff; 
+      color: #555555;
+  }
+  .hover:abc{color: red;}
+
+ .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+ .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo {
+      font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+.panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+
+  </style>
+
+
+
+</head>
+<body background="https://cdn.pixabay.com/photo/2016/07/12/10/19/texture-1511759_960_720.jpg">
+
+
+
+<div class="sticky-top">
+<div>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+	
+  <a class="navbar-brand" href="#">
+    <img src="https://pbs.twimg.com/profile_images/1040139620179050496/BDFnBKL4_400x400.jpg" alt="logo" style="width:30px;">
+  </a>
+  
+  <form class="form-inline" action="/action_page.php">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search In YMCA">
+    
+  </form>
+  <a class="nav-link" href="#"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+  
+ <ul class="navbar-nav"> 
+    <li class="nav-item">
+      <a class="nav-link" href="#" >Home</a>
+    </li>
+    
+    <li class="nav-item">
+    	<a class="nav-link" href="" >About</a></li>
+    	 <li class="nav-item">
+    	<a class="nav-link" href="">Students Login</a></li>
+   <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          Examination
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#" >BTech</a>
+          <a class="dropdown-item" href="#" >BSC</a>
+          <a class="dropdown-item" href="#" >MTech</a>
+        </div>
+      </li>
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+          Life@YMCA
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#" >CULMYCA</a>
+          <a class="dropdown-item" href="#" >Hostel</a>
+          </div>
+      </li>
+      
+      <li>
+      <div></i><i  class="fa fa-twitter"style="font-size:24px;color: white;"></i><i class="fa fa-facebook-official" style="font-size:24px;color: white;"></i><i class="fa fa-instagram"style="font-size:24px;color: white;"></i><i class="fa fa-google"style="font-size:24px; color: white;"></i></div>
+</li>
+   </ul>
+</nav></div></div>
+<div class="container-fluid bg-1 text-center">
+  <h3 style="font-family: calirilight;">YMCA Faridabad</h3>
+  <img src="https://pbs.twimg.com/profile_images/1040139620179050496/BDFnBKL4_400x400.jpg" class="img-circle" alt="Bird" width="200" height="200">
+  <h3 style="font-family: calirilight;">All Cources affilated to AICTE</h3>
+</div>
+
+<div class="container-fluid bg-2 text-center">
+  <h3 style="font-family: calirilight;">Cources Offered</h3>
+  <p style="font-family: calirilight;">BTech, Mtech, BSC, MSC, BBA, BCA, MBA</p>
+</div>
+<br>
+<div class="container-fluid bg-3 text-center">
+  <h3 style="font-family: calirilight;">Want Admission?</h3>
+  <button class="mx-auto" class="abc" style="border: 1px solid black;
+  border-radius: 10px;padding: 5px;background-color: yellow;" style="font-family: calirilight;">Registration 2k19</button>
+</div>
+
+<br>
+
+ <hr>
+    <div class="col-sm-9"><div style="background-color: lightgrey; padding: 10px;">
+      <h4 class="mx-auto" align="center" style="font-family: calirilight;">Hon Vice Chancellor</h4>
+      <hr>
+      <img src="http://ymcaust.ac.in/images/vc_dinesh_kumar2.jpg" style="display: block;
+    margin-left: auto;
+    margin-right: auto" height="100" width="100">
+    <h4 class="mx-auto" align="center" style="font-family: calirilight;"><small>Sh. Dinesh Kumar</small></h4></div><hr>
+</div>
+
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="https://static.punjabkesari.in/multimedia/2017_10image_19_30_471550000ymca-ll.jpg" alt="First slide" height="200">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://i.ndtvimg.com/i/2017-02/ymca-university-faridabad_650x400_81486816502.jpg" alt="Second slide" height="200">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="https://s3-ap-southeast-1.amazonaws.com/khaskhabar/khaskhabarimages/img500/12-57-1511087673-272950-khaskhabar.jpg" alt="Third slide" height="200">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<br>
+
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin">Highlights</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Hostel YMCA Faridabad</p>
+      <img src="http://ymcaust.ac.in/images/girls_hostel.jpg" class="img-responsive margin" style="width:100%;height:200; alt="Image" >
+    </div><br>
+    <div class="col-sm-4"> 
+      <p>Auditorium YMCA Faridabad</p>
+      <img src="http://www.newsymca.com/wp-content/uploads/2018/09/002-1024x642.jpg" class="img-responsive margin" style="width:100%;height: 200;" alt="Image">
+    </div><br>
+   <div class="col-sm-4"> 
+      <p>Mechanical Dept YMCA Faridabad</p>
+      <img src="https://getmyuni.azureedge.net/college-images-test/ymca-university-of-science-and-technology-faridabad/6f2ef78b3bb74e9a890edf2375aab9c6.png" class="img-responsive margin" style="width:100%;height: 200" alt="Image">
+    </div>
+    <br>
+    <div class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-4">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+    <div class="col-sm-8">
+      <h2>Our Values</h2>
+      <h4><strong>MISSION:</strong> Our Mission Is To Teach Others</h4>      
+      <p><strong>VISION:</strong> Our vision Is To Make Education Free</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<br>
+<div class="jumbotron">
+	<h3 style="font-family: calibrilight;" align="center">Video Of YMCA Faridabad</h3>
+<div class="embed-responsive embed-responsive-16by9">
+  <iframe class="embed-responsive-item" src=""  allowfullscreen></iframe>
+</div>
+
+<div class="container-fluid">
+  <div class="text-center">
+    <h2>Fee Structure</h2>
+    <h4>Fees Calendar For You</h4>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>BSC</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>2000</strong>College</p>
+          <p><strong>1500</strong>Lab</p>
+          <p><strong>5000</strong>Hostel</p>
+          <p><strong>2000</strong>Mess</p>
+          <p><strong>Endless</strong>100000</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Rs 100000</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Register</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>BTech</h1>
+        </div>
+        <div class="panel-body">
+          <p><strong>2000</strong>College</p>
+          <p><strong>1500</strong>Lab</p>
+          <p><strong>5000</strong>Hostel</p>
+          <p><strong>2000</strong>Mess</p>
+          <p><strong>Endless</strong>100000</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Rs 100000</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Register</button>
+        </div>
+      </div>      
+    </div>       
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h1>MTech</h1>
+        </div>
+        <div class="panel-body">
+         <p><strong>2000</strong>College</p>
+          <p><strong>1500</strong>Lab</p>
+          <p><strong>5000</strong>Hostel</p>
+          <p><strong>2000</strong>Mess</p>
+          <p><strong>Endless</strong>100000</p>
+        </div>
+        <div class="panel-footer">
+          <h3>Rs 100000</h3>
+          <h4>per month</h4>
+          <button class="btn btn-lg">Register</button>
+        </div>
+      </div>      
+    </div>    
+  </div>
+</div>
+<footer>Website Created By Aayush Tyagi For YMCA Faridabad</footer>
+
+
+
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>
